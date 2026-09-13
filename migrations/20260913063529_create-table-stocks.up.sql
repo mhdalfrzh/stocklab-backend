@@ -1,0 +1,9 @@
+CREATE TABLE stocks (
+    id BIGSERIAL PRIMARY KEY,
+    ticker VARCHAR(10) NOT NULL UNIQUE,
+    yahoo_symbol VARCHAR(20) NOT NULL UNIQUE,
+    company_name VARCHAR(255) NOT NULL,
+    sector VARCHAR(100),
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
