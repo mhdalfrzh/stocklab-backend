@@ -9,6 +9,11 @@
 bin/
 tmp/
 
+# Root-level compiled binaries (no extension) — e.g. go build output
+/api
+/main
+
+
 # Test binary, built with `go test -c`
 *.test
 
